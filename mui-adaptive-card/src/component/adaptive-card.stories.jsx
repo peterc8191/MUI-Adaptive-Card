@@ -1,4 +1,7 @@
 import AdaptiveCard from "./adaptive-card";
+import { adaptiveJson } from "./__mock__/adaptive";
+import { form } from "./__mock__/form";
+import { accordian } from "./__mock__/accordian";
 
 export default {
   component: AdaptiveCard,
@@ -7,5 +10,13 @@ export default {
 };
 
 export const Default = {
-  args: {},
+  args: { adaptiveJson: adaptiveJson },
+};
+
+export const Form = {
+  args: { adaptiveJson: form },
+};
+
+export const Accordian = {
+  args: { adaptiveJson: accordian },
 };
