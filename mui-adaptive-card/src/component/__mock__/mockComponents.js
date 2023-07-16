@@ -20,6 +20,7 @@ export const mockButton = (text, variant = "", size = "") => {
     text: text,
     variant: variant,
     size: size,
+    href: "https://www.google.com",
   };
 };
 
@@ -68,6 +69,11 @@ export const mockColumnSet = {
       ],
     },
   ],
+};
+
+export const mockCard = {
+  type: "Card",
+  items: [mockColumnSet, mockAccordianGroup],
 };
 
 export const mockContainer = {

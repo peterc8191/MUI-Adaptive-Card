@@ -1,11 +1,11 @@
 import { mockAccordianGroup } from "./mockComponents";
 
 export const accordian = {
-  type: "AdaptiveCard",
+  type: "AdaptiveJson",
   version: "1.0",
   body: [
     {
-      type: "Container",
+      type: "Card",
       items: [mockAccordianGroup],
     },
   ],

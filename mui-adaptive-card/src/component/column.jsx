@@ -11,6 +11,7 @@ function ColumnSet({ columns }) {
             container
             item
             xs={column?.xsWidth}
+            lg={column?.lgWidth}
             justifyContent={column?.justifyContent}
             alignItems={column?.justifyContent}
             key={index}

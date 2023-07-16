@@ -9,6 +9,7 @@ import Checkboxes from "./checkbox.jsx";
 import RadioButtonsGroup from "./radio-input";
 import AccordionGroup from "./accordian";
 import TextFields from "./text-field";
+import AdaptiveCard from "./adaptive-card";
 
 export default function componentHandler(item) {
   switch (item.type) {
@@ -23,7 +24,7 @@ export default function componentHandler(item) {
       return <Stacked item={item} />;
     case "Button":
       return (
-        <Button variant={item?.variant} size={item?.size}>
+        <Button variant={item?.variant} size={item?.size} href={item?.href}>
           {item.text}
         </Button>
       );
@@ -35,6 +36,8 @@ export default function componentHandler(item) {
       );
     case "FactSet":
       return <FactSet items={item.body} />;
+    case "Card":
+      return <AdaptiveCard body={item.items} />;
     case "Divider":
       return <Divider />;
     case "Container":

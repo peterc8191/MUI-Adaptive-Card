@@ -1,11 +1,11 @@
-import { mockAccordianGroup, mockCheckbox, mockRadioGroup, mockTestBlock, mockTextField } from "./mockComponents";
+import { mockCheckbox, mockRadioGroup, mockTestBlock, mockTextField } from "./mockComponents";
 
 export const form = {
-  type: "AdaptiveCard",
+  type: "AdaptiveJson",
   version: "1.0",
   body: [
     {
-      type: "Container",
+      type: "Card",
       items: [
         {
           type: "Container",
@@ -16,7 +16,6 @@ export const form = {
             mockTextField("Placeholder multiline", true, true, 4),
             mockCheckbox,
             mockRadioGroup,
-            mockAccordianGroup,
           ],
         },
       ],

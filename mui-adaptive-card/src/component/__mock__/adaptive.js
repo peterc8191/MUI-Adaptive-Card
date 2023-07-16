@@ -1,28 +1,40 @@
-import { mockButton, mockColumnSet, mockContainer } from "./mockComponents";
+import { mockColumnSet, mockContainer, mockTestBlock } from "./mockComponents";
 
 export const adaptiveJson = {
-  type: "AdaptiveCard",
+  type: "AdaptiveJson",
   version: "1.0",
   body: [
     {
-      type: "Container",
+      type: "Card",
       items: [
         mockColumnSet,
         mockContainer,
-        {
-          type: "Button",
-          text: "Button Example",
-          variant: "outline",
-          size: "small",
-        },
-        {
-          type: "Link",
-          text: "Link example",
-        },
+        mockTestBlock("Actions", "bold", "body1"),
         {
           type: "Stack",
           spacing: 1,
-          body: [mockButton("Value 1", "contained"), mockButton("Value 1", "contained")],
+          body: [
+            {
+              type: "Link",
+              text: "Link example",
+              href: "https://www.google.com",
+            },
+            {
+              type: "Link",
+              text: "Link example 1",
+              href: "https://www.google.com",
+            },
+            {
+              type: "Link",
+              text: "Link example 2",
+              href: "https://www.google.com",
+            },
+            {
+              type: "Link",
+              text: "Link example 3",
+              href: "https://www.google.com",
+            },
+          ],
         },
       ],
     },

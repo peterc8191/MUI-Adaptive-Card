@@ -3,11 +3,11 @@ import React from "react";
 import componentHandler from "./component-handler";
 import "./adaptive-card.css";
 
-function AdaptiveCard({ adaptiveJson }) {
+function AdaptiveCard({ body }) {
   return (
-    <Card>
+    <Card className="sm-margin">
       <div className="adaptive-card-container">
-        {adaptiveJson?.body[0].items.map((component) => {
+        {body.map((component) => {
           return componentHandler(component);
         })}
       </div>
