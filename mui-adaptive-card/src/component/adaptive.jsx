@@ -1,6 +1,6 @@
 import React from "react";
 import componentHandler from "./component-handler";
-import "./adaptive-card.css";
+import "./adaptive.css";
 
 function Adaptive({ adaptiveJson }) {
   return (

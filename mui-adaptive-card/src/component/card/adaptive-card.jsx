@@ -1,7 +1,7 @@
 import { Card } from "@mui/material";
 import React from "react";
 import componentHandler from "../component-handler";
-import "./adaptive-card.css";
+import "./adaptive.css";
 
 function AdaptiveCard({ body }) {
   return (
