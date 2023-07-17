@@ -1,5 +1,5 @@
 import React from "react";
-import componentHandler from "./component-handler";
+import componentHandler from "../component-handler";
 import "./adaptive-card.css";
 
 function Container({ items }) {

@@ -1,15 +1,15 @@
 import { Button, Typography, Divider, Link } from "@mui/material";
 import React from "react";
-import FactSet from "./fact-set";
-import Container from "./container";
-import ColumnSet from "./column";
-import AvatarIcon from "./avatar-icon";
-import Stacked from "./stack";
-import Checkboxes from "./checkbox.jsx";
-import RadioButtonsGroup from "./radio-input";
-import AccordionGroup from "./accordian";
-import TextFields from "./text-field";
-import AdaptiveCard from "./adaptive-card";
+import FactSet from "./fact-set/fact-set";
+import Container from "./container/container";
+import ColumnSet from "./column-set/column-set";
+import AvatarIcon from "./avatar-icon/avatar-icon";
+import Stacked from "./stack/stack";
+import Checkboxes from "./form/checkbox.jsx";
+import RadioButtonsGroup from "./form/radio-input";
+import AccordionGroup from "./accordian/accordian";
+import TextFields from "./form/text-field";
+import AdaptiveCard from "./card/adaptive-card";
 
 export default function componentHandler(item) {
   switch (item.type) {

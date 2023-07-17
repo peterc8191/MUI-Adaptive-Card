@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Stack } from "@mui/material";
-import componentHandler from "./component-handler";
+import componentHandler from "../component-handler";
 
 export default function Stacked({ item }) {
   return (
