@@ -1,6 +1,6 @@
 import React from "react";
 import componentHandler from "../component-handler";
-import "./adaptive.css";
+import "../adaptive.css";
 
 function Container({ items }) {
   return (
