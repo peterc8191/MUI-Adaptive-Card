@@ -6,16 +6,9 @@ function ColumnSet({ columns }) {
   return (
     <Grid container className="sm-margin">
       {columns.map((column, index) => {
+        const { body, ...props } = column;
         return (
-          <Grid
-            container
-            item
-            xs={column?.xsWidth}
-            lg={column?.lgWidth}
-            justifyContent={column?.justifyContent}
-            alignItems={column?.justifyContent}
-            key={index}
-          >
+          <Grid container item {...props} key={index}>
             {column.body.map((item) => {
               return componentHandler(item);
             })}

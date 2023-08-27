@@ -56,10 +56,10 @@ export const mockTextField = (label, fullWidth = false, multiLine = false, rows 
 export const mockColumnSet = {
   type: "ColumnSet",
   columns: [
-    { type: "Column", justifyContent: "center", alignItems: "center", xsWidth: "3", body: [mockAvatarIcon] },
+    { type: "Column", justifyContent: "center", alignItems: "center", xs: "3", body: [mockAvatarIcon] },
     {
       type: "Column",
-      xsWidth: "9",
+      xs: "9",
       body: [
         {
           type: "Stack",
